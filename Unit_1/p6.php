@@ -7,7 +7,23 @@
     </head>
     <body>
         <?php
-            echo
+            $i=15;
+            echo "With while loop";
+            while($i<=20)
+            {
+                echo "$i <br>";
+                $i++;
+            }
+
+            $i=15;
+            echo "With Do while";
+            do
+            {
+                echo "$i <br>";
+                $i++;
+            }
+            while($i<=20);
+
         ?>
     </body>
 </html>
