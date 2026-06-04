@@ -35,6 +35,60 @@
             echo"Remainder Assignment of a and b :$g <br>";
 
             echo"Relational <br>";
+            if($a==$b)
+            {
+                echo "a is equal to b <br>";
+            }
+            else
+            {
+                echo "a is not equal to b <br>";
+            }
+
+             if($a!=$b)
+            {
+                echo "a is not equal to b <br>";
+            }
+            else
+            {
+                echo "a is equal to b <br>";
+            }
+
+             if($a>$b)
+            {
+                echo "a is greater than b <br>";
+            }
+            else
+            {
+                echo "a is not greater than b <br>";
+            }
+
+             if($a<$b)
+            {
+                echo "a is less than b <br>";
+            }
+            else
+            {
+                echo "a is not less than b <br>";
+            }
+
+             if($a>=$b)
+            {
+                echo "a is greater than or equal to b <br>";
+            }
+            else
+            {
+                echo "a is not greater than or equal to b <br>";
+            }
+
+             if($a<=$b)
+            {
+                echo "a is less than or equal to b <br>";
+            }
+            else
+            {
+                echo "a is not less than or equal to b <br>";
+            }
+            
 
         ?>
     </body>

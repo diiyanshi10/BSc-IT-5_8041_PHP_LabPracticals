@@ -7,11 +7,10 @@
     </head>
     <body>
         <?php
-           echo "Include and Require <br>";
+           echo " Using Include";
            include "p8.php";
            echo "After including p8.php <br>";
-           require "p9.php";
-           echo "After requiring p9.php <br>";
+           
         ?>
     </body>
 </html>
