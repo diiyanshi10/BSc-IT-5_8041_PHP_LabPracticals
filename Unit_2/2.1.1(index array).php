@@ -7,7 +7,8 @@
     </head>
     <body>
         <?php
-            echo "Using index array to create week"
+            echo "Using index array to create week";
+            $days=array("Monday","Tuseday","Wednesday")
         ?>
     </body>
 </html>
