@@ -10,20 +10,18 @@
             error_reporting(0);
         ?>
         <form method="get">
-            <input type ="text" name="name1" >
-            <input type ="text" name="name2" >
-            <input type ="text" name="name3" >
-            <input type ="text" name="name4" >
+            <input type ="text" name="name[0]" >
+            <input type ="text" name="name[1]" >
+            <input type ="text" name="name[2]" >
+            <input type ="text" name="name[3]" >
+            <input type ="text" name="name[4]" >
             <input type ="submit"  name="submit" value="Submit">                          
         </form>
 
         <?php
             echo "<H1> User Input for array <br>";
-            $nm=array();
-            $nm[0]=$_GET['name1'];
-            $nm[1]=$_GET['name2'];
-            $nm[2]=$_GET['name3'];
-            $nm[3]=$_GET['name4'];
+        
+            $nm=$_GET['name'];
             
             foreach($nm as $n)
             {

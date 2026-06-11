@@ -7,8 +7,14 @@
     </head>
     <body>
         <?php
-            echo "Using index array to create week";
-            $days=array("Monday","Tuseday","Wednesday")
+            echo "Using index array to create week <br>";
+            $days=array("Monday","Tuseday","Wednesday","Thursday","Friday","Saturday","Sunday");
+            
+            foreach($days as $d)
+            {
+                echo $d."<br>";
+            }
+
         ?>
     </body>
 </html>
