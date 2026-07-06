@@ -1,0 +1,209 @@
+================================================================================
+                    ELECTROPMART E-COMMERCE PLATFORM
+                          Setup Instructions
+================================================================================
+
+QUICK START GUIDE
+================================================================================
+
+1. DATABASE SETUP
+   - Open DEPLOYMENT_GUIDE.md for complete step-by-step instructions
+   - Create MySQL database on InfinityFree
+   - Import database.sql file using phpMyAdmin
+   - Note down database credentials
+
+2. FILE UPLOAD
+   - Download all files from this folder
+   - Connect via FTP to your InfinityFree account
+   - Upload to public_html directory
+   - Maintain folder structure (admin/, api/, assets/)
+
+3. CONFIGURATION
+   - Edit config.php with your database credentials:
+     * DB_HOST: sql.infinityfree.com
+     * DB_USER: your_db_username
+     * DB_PASS: your_db_password
+     * DB_NAME: your_db_name
+     * SITE_URL: https://yourdomain.com/
+   - Save and upload updated config.php
+
+4. CREATE ADMIN ACCOUNT
+   - Register at: https://yourdomain.com/register.php
+   - Go to phpMyAdmin > users table
+   - Change 'role' from 'customer' to 'admin'
+   - Login as admin to access dashboard
+
+5. ACCESS YOUR STORE
+   - Frontend: https://yourdomain.com/
+   - Admin: https://yourdomain.com/admin/
+   - Add products and start selling!
+
+================================================================================
+                              FILE MANIFEST
+================================================================================
+
+CORE FILES:
+✓ index.php                 - Homepage with featured products
+✓ config.php                - Database configuration
+✓ header.php                - Site header template
+✓ footer.php                - Site footer template
+✓ database.sql              - Database schema
+
+CUSTOMER PAGES:
+✓ product.php               - Product detail page
+✓ category.php              - Browse by category
+✓ search.php                - Search results
+✓ deals.php                 - Special deals page
+✓ cart.php                  - Shopping cart
+✓ checkout.php              - Checkout process
+✓ order-confirmation.php    - Order confirmation
+✓ order-details.php         - View order details
+✓ wishlist.php              - Wishlist management
+
+AUTHENTICATION:
+✓ login.php                 - User login
+✓ register.php              - User registration
+✓ logout.php                - Logout
+✓ account.php               - User dashboard
+
+ADMIN PANEL:
+✓ admin/index.php           - Admin dashboard
+✓ admin/products.php        - Product management
+✓ admin/categories.php      - Category management
+✓ admin/orders.php          - Order management
+✓ admin/users.php           - User management
+✓ admin/coupons.php         - Coupon management
+✓ admin/settings.php        - Store settings
+
+API ENDPOINTS:
+✓ api/add-to-wishlist.php   - Add wishlist API
+✓ api/remove-from-wishlist.php - Remove wishlist API
+
+ASSETS:
+✓ assets/css/style.css      - Main stylesheet (22KB)
+✓ assets/js/script.js       - JavaScript functionality
+
+DOCUMENTATION:
+✓ README.md                 - Complete documentation
+✓ DEPLOYMENT_GUIDE.md       - InfinityFree deployment guide
+✓ .htaccess                 - Apache configuration
+
+================================================================================
+                          DATABASE TABLES
+================================================================================
+
+users              - Customer and admin accounts
+categories         - Product categories
+products           - Product listings
+product_images     - Product images
+cart               - Shopping cart items
+orders             - Customer orders
+order_items        - Items in orders
+reviews            - Product reviews
+wishlist           - User wishlist
+coupons            - Discount codes
+
+================================================================================
+                        KEY FEATURES
+================================================================================
+
+✓ Responsive Design         - Works on all devices
+✓ Product Search            - Real-time search functionality
+✓ Shopping Cart             - Add/remove items, adjust quantities
+✓ Wishlist                  - Save favorite products
+✓ User Accounts             - Register, login, manage profile
+✓ Order Management          - Track order status
+✓ Product Ratings           - Review and rate products
+✓ Admin Dashboard           - Manage products, orders, users
+✓ Security Features         - Password hashing, input validation
+✓ Mobile Optimized          - Perfect on smartphones
+
+================================================================================
+                        SYSTEM REQUIREMENTS
+================================================================================
+
+✓ PHP 7.4 or higher
+✓ MySQL 5.7 or higher
+✓ Apache or Nginx
+✓ 100MB+ storage space
+✓ 1GB+ bandwidth recommended
+
+InfinityFree provides all of these!
+
+================================================================================
+                        SUPPORT & HELP
+================================================================================
+
+1. DEPLOYMENT ISSUES?
+   → Read DEPLOYMENT_GUIDE.md (complete step-by-step guide)
+   → Check InfinityFree Control Panel for database info
+   → Verify FTP credentials in connection settings
+
+2. DATABASE CONNECTION ERROR?
+   → Verify credentials in config.php
+   → Check database was imported successfully
+   → Ensure database user has proper permissions
+
+3. PAGE NOT FOUND?
+   → Verify all files uploaded to public_html
+   → Check folder structure matches original
+   → Ensure .htaccess is uploaded
+
+4. IMAGES NOT SHOWING?
+   → Add product images via admin panel
+   → Verify image URLs in database
+   → Check assets/images/ folder exists
+
+5. NEED MORE HELP?
+   → InfinityFree Support: https://www.infinityfree.net/support/
+   → PHP Docs: https://www.php.net/manual/
+   → MySQL Docs: https://dev.mysql.com/doc/
+
+================================================================================
+                        SECURITY NOTES
+================================================================================
+
+⚠ IMPORTANT: Before going live:
+
+1. Change all default passwords
+2. Update credentials in config.php with strong passwords
+3. Enable HTTPS in InfinityFree settings
+4. Update SITE_URL to use https://
+5. Keep backups of your database
+6. Never commit credentials to version control
+7. Regularly monitor for suspicious activity
+
+================================================================================
+                        NEXT STEPS
+================================================================================
+
+1. ✓ Upload files to InfinityFree
+2. ✓ Import database.sql via phpMyAdmin
+3. ✓ Update config.php with credentials
+4. ✓ Create admin account
+5. ✓ Add product categories
+6. ✓ Add products with images
+7. ✓ Customize store settings
+8. ✓ Test checkout process
+9. ✓ Enable payment gateway
+10. ✓ Launch and promote!
+
+================================================================================
+                        VERSION INFO
+================================================================================
+
+Electropmart v1.0
+- Complete e-commerce platform
+- Admin dashboard
+- Mobile responsive
+- Ready for InfinityFree deployment
+
+Built with: PHP, MySQL, HTML5, CSS3, JavaScript
+
+================================================================================
+
+Questions? Check README.md or DEPLOYMENT_GUIDE.md
+
+Good luck with your online store! 🚀
+
+================================================================================
